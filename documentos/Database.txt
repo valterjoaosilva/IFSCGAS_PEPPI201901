@@ -1,0 +1,25 @@
+Endereço:
+submissoes.gaspar.ifsc.edu.br
+OU
+192.168.0.3
+
+phpMyAdmin:
+http://submissoes.gaspar.ifsc.edu.br/phpmyadmin
+OU
+http://192.168.0.3/phpmyadmin/
+
+Banco de dados:
+PE_PPI_201901
+
+Usuário:
+PE_PPI_201901
+
+Senha:
+P3PPi201901
+
+
+
+Afazeres:
+- Trocar colunas TEXT de editores WYSIWYG para LONGTEXT
+- Trocar colunas senha de 32 para 60 caracteres (MD5 -> BCrypt)
+- Remover colunas login, para utilizarmos o e-mail como login

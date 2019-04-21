@@ -1,0 +1,27 @@
+Programação para Internet I:
+	Grupo 1 (1, 2 e 9):
+		Daniel
+		Rafael
+		Alisson
+		Emanoel
+	Grupo 2 (6, 7 e 8):
+		Tharlison
+		Kaioby
+		Marcelo
+	Grupo 3 (3, 4 e 5):
+		Nicolas
+		Luiz Fernando
+		André
+	Grupo 4 (12, 13):
+		Valter
+		Allan
+		Tony
+	Grupo 5 (11, 14, 15):
+		Lucas A.
+		Mateus
+		Thiago
+	Grupo 6 (10):
+		Tatiane
+		Djhessica
+	Grupo 7 (Banco de dados):
+		Edder

@@ -1,0 +1,267 @@
+% !TeX spellcheck = pt_BR
+\documentclass[12pt]{article}
+
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=20mm,
+	right=20mm,
+	top=20mm,
+	bottom=20mm
+}
+
+\usepackage[brazil]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[section]{placeins}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{indentfirst}
+
+\begin{document}
+
+\section{Informações básicas}
+
+\begin{itemize}
+	\item Nome do projeto: A DEFINIR
+	\item Nome das entidades do sistema:
+	\begin{itemize}
+		\item Artigo: Peça/Desenho/Acessório/Modelagem criada por um Designer.
+		\item Designer: Aluno/Egresso do IFSC que divulga seus artigos no sistema.
+		\item Administrador: Usuário que gerencia os designers e o conteúdo do sistema.
+	\end{itemize}
+\end{itemize}
+
+\section{Referências}
+
+Os seguintes websites foram passados como referência de visual.
+
+\begin{itemize}
+	\item www.enjoei.com.br
+	\item www.farmrio.com.br
+	\item www.chanel.com
+	\item www.prada.com
+\end{itemize}
+
+\section{Requisitos gerais}
+
+\begin{itemize}
+	\item Artigos podem estar disponíveis para venda, ou podem ser apenas para divulgação. A intenção é que o site seja utilizado não apenas para divulgar e vender artigos de moda, mas que empresas possam acessar o site para conhecer o trabalho dos designers.
+	\item Os dados de contato (e.g. e-mail, telefone e celular) dos designers NÃO É exibido no sistema, e é usado somente no envio de e-mails de contato a partir do site.
+	\item Designers não devem poder acessar funcionalidades de administradores, e vice-versa.
+\end{itemize}
+
+\section{Itens não contemplados}
+
+\begin{itemize}
+	\item Aprovação de artigos publicados: O primeiro artigo cadastrado por um designer precisa passar por aprovação, os demais devem ser sorteados aleatoriamente para passar ou não. A probabilidade de sorteio para aprovação deve ser definida na área administrativa.
+\end{itemize}
+
+\section{Funcionamento do Website}
+
+\subsection{Menu "Ateliê"}
+
+Vai para a página principal do sistema, com listagem e filtragem de artigos.
+
+\begin{itemize}
+	\item A busca filtra os artigos da lista principal pela presença do termo (A) no nome ou nas descrições (breve e completa) do artigo, ou (B) no nome ou na descrição da categoria.
+	\item A seleção de uma ou mais categorias filtra os artigos da lista principal por categoria.
+	\item A seleção de um tipo de disponibilidade filtra os artigos da lista principal por disponibilidade.
+	\item A seleção do tipo de ordenação reordena os artigos da lista principal: a ordenação padrão é por data de atualização, a qual deverá ser mantida como segunda forma de ordenação mesmo que outra seja selecionada. "Mais recentes" ordena por data de atualização. "Mais vistos" por número de visualizações. "Mais favoritados" por número de favoritações. "Mais compartilhados" por número de compartilhamentos.
+	\item Clicando em "Detalhes" na lista principal ou no nome ou na imagem do artigo, abre janela de detalhamento do artigo selecionado.
+	\item Clicando no coração na lista principal, abre janela para o usuário informar seu e-mail e receber um link que dá acesso direto ao artigo.
+	\item Clicando nos ícones de compartilhamento, abre janela com o link para o usuário postar (possibilidades melhores são bem-vindas!).
+	\item A barra lateral mostra alguns artigos selecionados aleatoriamente. Carregar novos artigos nessa barra se o usuário passar 5 segundos sem passar o mouse sobre ela seria interessante (usando AJAX). Clicando nos artigos, janela de detalhamento é aberta.
+\end{itemize}
+
+\subsection{Tela de detalhamento de artigo}
+
+Janela popup (modal) aberta quando um artigo é selecionado.
+
+\begin{itemize}
+	\item Clicando em "Contatar o designer" abre janela de envio de contato para o designer do artigo.
+	\item Clicando em "Propor customização" abre janela de envio de proposta de customização para o designer do artigo.
+	\item Clicando nos dados do designer abre janela com as informações completas do designer (mesma da área "Designers").
+\end{itemize}
+
+\subsection{Tela de contato com designer}
+
+Janela popup (modal) aberta ao clicar em "Contatar o designer".
+
+\begin{itemize}
+	\item Mostra todos os detalhes do artigo, e apresenta formulário para preenchimento de informações a serem enviadas para o designer do artigo.
+	\item As informações são enviadas por e-mail para o designer e também gravadas na tabela lgContatoDesigner.
+\end{itemize}
+
+\subsection{Tela de proposição de customização}
+
+Janela popup (modal) aberta ao clicar em "Propor customização".
+
+\begin{itemize}
+	\item Mostra todos os detalhes do artigo, e apresenta formulário para preenchimento de informações a serem enviadas para o designer do artigo.
+	\item As informações são enviadas por e-mail para o designer e também gravadas na tabela lgPropostaCustomizacao.
+\end{itemize}
+
+\subsection{Menu "Designers"}
+
+Mostra informações sobre os designers que divulgam no sistema.
+
+\begin{itemize}
+	\item Mostrar listagem dos designers cadastrados, em ordem alfabética de nome, com suas fotos, nomes, apresentações breves, cursos e fases.
+	\item Ao clicar na foto ou no nome de um designer, abrir janela com as mesmas informações básicas mas com a apresentação detalhada do designer escolhido.
+\end{itemize}
+
+\subsection{Menu "Projetos"}
+
+Descrição e fotos associadas a projetos desenvolvidos no contexto dos cursos.
+
+\begin{itemize}
+	\item Mostrar listagem dos projetos cadastrados, em ordem alfabética de data de início, com suas imagens de capa, nomes, descrições breves, turmas, fases, e datas de início/término.
+	\item Ao clicar na capa ou no nome de um projeto, abrir janela com as mesmas informações básicas mas com a descrição detalhada e as fotos associadas. Ao clicar em uma foto, abrir em tela cheia.
+\end{itemize}
+
+\subsection{Menu "Desfiles"}
+
+Descrição e fotos associadas a desfiles associados aos cursos.
+
+\begin{itemize}
+	\item Mostrar listagem dos desfiles cadastrados, em ordem alfabética de data, com suas imagens de capa, datas, descrições breves e turmas.
+	\item Ao clicar na capa ou na data de um desfile, abrir janela com as mesmas informações básicas mas com a descrição detalhada e as fotos associadas. Ao clicar em uma foto, abrir em tela cheia.
+\end{itemize}
+
+\subsection{Menu "Sobre nós"}
+
+Explicação sobre o propósito e o funcionamento do sistema, e sobre os cursos de moda/vestuário (textos e vídeos).
+
+\begin{itemize}
+	\item Mostrar página armazenada na tabela adPagina com identificador PAGINA\_SOBRE.
+\end{itemize}
+
+\subsection{Menu "Revistas"}
+
+Página sobre revistas digitais associadas ao curso.
+
+\begin{itemize}
+	\item Mostrar página armazenada na tabela adPagina com identificador PAGINA\_REVISTAS.
+\end{itemize}
+
+\subsection{Menu "Contato"}
+
+Permite ao visitante entrar em contato com a equipe que gerencia o sistema (envia e-mail).
+
+\begin{itemize}
+	\item Mostrar formulário de contato com campos Nome, E-mail, Telefone, Celular, Celular com Whatsapp e Mensagem.
+	\item Gravar registro na tabela lgContato.
+	\item Enviar dados via e-mail para administradores que possuem o campo blRecebeContato verdadeiro.
+\end{itemize}
+
+\section{Requisitos da Área administrativa}
+
+\begin{itemize}
+	\item Incluir verificação de autenticação em TODAS as páginas acessadas.
+	\item Apresentações detalhadas de designers, descrições detalhadas de artigos, variações disponíveis de artigos, e conteúdos de páginas devem ser editadas em WYSIWYG.
+\end{itemize}
+
+\section{Funcionamento da Área administrativa}
+
+\subsection{Tela de login - Entrada no sistema}
+
+\begin{itemize}
+	\item Usuário informa login e senha.
+	\item Autenticação é realizada: Usuário é buscado por login, e se o hash MD5 da senha digitada coincidir com aquele armazenado no banco o acesso é permitido. Deve-se buscar antes por designers, e apenas depois por administradores. Se um designer não tiver sido aprovado por um administrador, seu acesso ao sistema NÃO PODE ser permitido.
+	\item Se a autenticação foi bem sucedida, gravar na sessão informações do usuário logado.
+	\item Se a autenticação falhou, emitir alerta SEM DEIXAR CLARO se login existe ou não.
+\end{itemize}
+
+\subsection{Tela de login - Recurso "Ainda não tenho acesso"}
+
+Permitido apenas para designers.
+
+\begin{itemize}
+	\item Designer informa seus dados cadastrais.
+	\item A senha deve ser digitada duas vezes.
+	\item Registro de designer é criado, mas SEM a flag de aprovação.
+	\item Designer é notificado de que deve aguardar e-mail de avaliação da solicitação.
+	\item Administradores devem ser notificados por e-mail de que existe uma nova solicitação.
+\end{itemize}
+
+\subsection{Tela de login - Recurso "Esqueci minha senha"}
+
+Permitido apenas para designers.
+
+\begin{itemize}
+	\item Solicitar login ou e-mail do designer.
+	\item Buscar o registro associado.
+	\item Caso o registro não seja encontrado, emitir alerta.
+	\item Caso o registro seja encontrado, gerar e gravar nova senha aleatória (letras, números e símbolos) e enviar e-mail ao usuário com a nova senha e sugerindo alterá-la.
+\end{itemize}
+
+\subsection{Perfil Designer - Página principal}
+
+\begin{itemize}
+	\item Uma mensagem solicitando que o designer atualize seu cadastro deverá ser exibida a cada 6 meses. A data de atualização do registro do designer pode ser utilizada para isso.
+\end{itemize}
+
+\subsection{Perfil Designer - Editar perfil}
+
+\begin{itemize}
+	\item Permitir alterar dados do designer, EXCETO seu login e seu e-mail.
+	\item Atribuir sua data de atualização de cadastro.
+	\item Troca de senha exige redigitação.
+	\item Se nova senha não for informada, mantê-la inalterada.
+\end{itemize}
+
+\subsection{Perfil Designer - Gerenciar artigos}
+
+Listagem, Criação/Edição/Exclusão de artigos.
+
+Listagem, Upload e Exclusão de fotografias de artigos.
+
+\begin{itemize}
+	\item Caso um código de artigo que já existe seja informado, emitir alerta.
+	\item Botões cima/baixo do sub-cadastro de fotografias devem alterar a ordem na qual as fotografias aparecem no website. Isso deve ser feito através do campo inOrdem da tabela cnArtigoFotografia.
+\end{itemize}
+
+\subsection{Perfil Administrador - Página principal}
+
+\subsubsection{Listagem de designers que solicitaram acesso}
+
+\begin{itemize}
+	\item Em caso de aprovação: Marcar como aprovado e enviar e-mail de aceite.
+	\item Em caso de recusa: Excluir o registro e enviar e-mail de recusa.
+	\item Em ambos os casos, solicitar confirmação da ação.
+\end{itemize}
+
+\subsubsection{Gerenciar Designers}
+
+Listagem, Criação/Edição/Exclusão de designers.
+
+\subsubsection{Gerenciar Categorias}
+
+Listagem, Criação/Edição/Exclusão de categorias de artigos.
+
+\subsubsection{Gerenciar Projetos}
+
+Listagem, Criação/Edição/Exclusão de projetos.
+
+Listagem, Upload e Exclusão de fotografias de projetos.
+
+\begin{itemize}
+	\item Botões cima/baixo do sub-cadastro de fotografias devem alterar a ordem na qual as fotografias aparecem no website. Isso deve ser feito através do campo inOrdem da tabela cnProjetoFotografia.
+\end{itemize}
+
+\subsubsection{Gerenciar Desfiles}
+
+Listagem, Criação/Edição/Exclusão de desfiles.
+
+Listagem, Upload e Exclusão de fotografias de desfiles.
+
+\begin{itemize}
+	\item Botões cima/baixo do sub-cadastro de fotografias devem alterar a ordem na qual as fotografias aparecem no website. Isso deve ser feito através do campo inOrdem da tabela cnDesfileFotografia.
+\end{itemize}
+
+\subsubsection{Gerenciar Páginas}
+
+Listagem e Edição de páginas.
+
+\end{document}

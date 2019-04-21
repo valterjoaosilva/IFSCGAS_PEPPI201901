@@ -1,0 +1,40 @@
+Programação para Internet I:
+- Layout do website:
+	G1 Layout básico
+	- Página "Ateliê"
+		G1 Listagem com busca, filtragem e ordenação
+		G3 Janela de detalhes de artigo
+		G3 Janela de contato com designer
+		G3 Janela de proposição de customização
+	G2 Página "Designers" com janela de detalhes
+	G2 Página "Projetos" com janela de detalhes/fotografias e Página "Desfiles" com janela de detalhes/fotografias
+	G2 Páginas "Sobre nós", "Revistas" e "Contato"
+- Layout da área administrativa:
+	XX Layout da tela de login
+	XX Layout da janela "Ainda não tenho acesso"
+	XX Layout da janela "Esqueci minha senha"
+	G1 Layout das telas internas
+	G6 Layout da página principal: Mensagem de atualização de cadastro e Tabela de aprovação de designers
+	- Layout dos cadastros:
+		G5 Layout de listagem
+		- Layout de criação / edição
+			G4 Exemplos de campos: Texto, E-mail, Telefone, Senha, Combo box (<select>), Check box, e Validação de formulários
+			G4 Exemplos de campos: Data, Data/Hora
+			G5 Exemplos de campos: Editor WYSIWYG
+			G5 Sub-cadastro de fotografias com upload, ordenação e exclusão
+
+Programação para Internet II:
+- Infraestrutura: Guilherme
+- Tela de login: Edison
+- Designer:
+	- Página principal: Graciliana
+	- Gerenciar artigos e fotografias de artigos: Vitor
+- Administrador:
+	- Página principal: Natália
+	- Gerenciar designers:  Natália
+	- Gerenciar categorias de artigos: Lucas e Mateus
+	- Gerenciar projetos e fotografias de projetos: Isabela
+	- Gerenciar desfiles e fotografias de desfiles: Isabela
+	- Gerenciar páginas: Natália
+- API: Bruno
+- Testes: Lucas e Mateus
