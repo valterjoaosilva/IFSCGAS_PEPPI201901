@@ -1,9 +1,9 @@
-# PPIExtensaoIFSCGaspar201901
+# IFSCGAS_PEPPI201901
 Projeto prático de extensão de Programação para Internet do IFSC Gaspar semestre 2019-01
 
 ## Contribuindo através do GitHub
 1. Crie uma conta no GitHub
-1. Acesse o repositório https://github.com/lfarcaro/PPIExtensaoIFSCGaspar201901
+1. Acesse o repositório https://github.com/lfarcaro/IFSCGAS_PEPPI201901
 1. Faça "Fork" do repositório para a sua conta do GitHub
 1. Faça "Clone" do seu "Fork" para uma pasta local ("Working Copy")
 1. Faça as alterações na sua "Working Copy" e **lembre-se** de realizar "Commit" e "Push origin" sempre que necessário para salvar suas alterações no **seu** GitHub
