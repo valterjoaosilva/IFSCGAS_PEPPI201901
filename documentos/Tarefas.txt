@@ -22,6 +22,7 @@ Programação para Internet I:
 			G4 Exemplos de campos: Data, Data/Hora
 			G5 Exemplos de campos: Editor WYSIWYG
 			G5 Sub-cadastro de fotografias com upload, ordenação e exclusão
+	XX Criação do banco de dados
 
 Programação para Internet II:
 - Infraestrutura: Guilherme
