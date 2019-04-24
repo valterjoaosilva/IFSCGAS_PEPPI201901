@@ -164,72 +164,13 @@ Permite ao visitante entrar em contato com a equipe que gerencia o sistema (envi
 
 \section{Funcionamento da Área administrativa}
 
-\subsection{Tela de login - Entrada no sistema}
-
-\begin{itemize}
-	\item Usuário informa login e senha.
-	\item Autenticação é realizada: Usuário é buscado por login, e se o hash MD5 da senha digitada coincidir com aquele armazenado no banco o acesso é permitido. Deve-se buscar antes por designers, e apenas depois por administradores. Se um designer não tiver sido aprovado por um administrador, seu acesso ao sistema NÃO PODE ser permitido.
-	\item Se a autenticação foi bem sucedida, gravar na sessão informações do usuário logado.
-	\item Se a autenticação falhou, emitir alerta SEM DEIXAR CLARO se login existe ou não.
-\end{itemize}
-
-\subsection{Tela de login - Recurso "Ainda não tenho acesso"}
-
-Permitido apenas para designers.
-
-\begin{itemize}
-	\item Designer informa seus dados cadastrais.
-	\item A senha deve ser digitada duas vezes.
-	\item Registro de designer é criado, mas SEM a flag de aprovação.
-	\item Designer é notificado de que deve aguardar e-mail de avaliação da solicitação.
-	\item Administradores devem ser notificados por e-mail de que existe uma nova solicitação.
-\end{itemize}
-
-\subsection{Tela de login - Recurso "Esqueci minha senha"}
-
-Permitido apenas para designers.
-
-\begin{itemize}
-	\item Solicitar login ou e-mail do designer.
-	\item Buscar o registro associado.
-	\item Caso o registro não seja encontrado, emitir alerta.
-	\item Caso o registro seja encontrado, gerar e gravar nova senha aleatória (letras, números e símbolos) e enviar e-mail ao usuário com a nova senha e sugerindo alterá-la.
-\end{itemize}
-
-\subsection{Perfil Designer - Página principal}
-
-\begin{itemize}
-	\item Uma mensagem solicitando que o designer atualize seu cadastro deverá ser exibida a cada 6 meses. A data de atualização do registro do designer pode ser utilizada para isso.
-\end{itemize}
-
-\subsection{Perfil Designer - Editar perfil}
-
-\begin{itemize}
-	\item Permitir alterar dados do designer, EXCETO seu login e seu e-mail.
-	\item Atribuir sua data de atualização de cadastro.
-	\item Troca de senha exige redigitação.
-	\item Se nova senha não for informada, mantê-la inalterada.
-\end{itemize}
-
 \subsection{Perfil Designer - Gerenciar artigos}
 
 Listagem, Criação/Edição/Exclusão de artigos.
 
-Listagem, Upload e Exclusão de fotografias de artigos.
-
 \begin{itemize}
-	\item Caso um código de artigo que já existe seja informado, emitir alerta.
-	\item Botões cima/baixo do sub-cadastro de fotografias devem alterar a ordem na qual as fotografias aparecem no website. Isso deve ser feito através do campo inOrdem da tabela cnArtigoFotografia.
-\end{itemize}
-
-\subsection{Perfil Administrador - Página principal}
-
-\subsubsection{Listagem de designers que solicitaram acesso}
-
-\begin{itemize}
-	\item Em caso de aprovação: Marcar como aprovado e enviar e-mail de aceite.
-	\item Em caso de recusa: Excluir o registro e enviar e-mail de recusa.
-	\item Em ambos os casos, solicitar confirmação da ação.
+	
+	
 \end{itemize}
 
 \subsubsection{Gerenciar Designers}

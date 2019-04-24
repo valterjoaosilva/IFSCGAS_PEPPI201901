@@ -3795,7 +3795,7 @@
 								"$ref": "AAAAAAFpplH4TklSg2k="
 							},
 							"name": "obterArtigos",
-							"documentation": "Deve retornar um vetor de artigos, filtrados e ordenados de acordo com os parâmetros.",
+							"documentation": "Deve retornar um vetor de artigos, filtrados e ordenados de acordo com os parâmetros.\n\nO parâmetro stBusca busca os artigos que têm o termo no nome ou nas descrições (breve e completa) do artigo, ou no nome ou na descrição da categoria do artigo.\n\nO parâmetro idaArtigoCategoria busca os artigos cujo ID de categoria é igual a qualquer um dos valores passados.\n\nO parâmetro fgDisponibilidade busca os artigos cuja disponibilidade é igual à passada ('V' para venda ou 'D' para divulgação).\n\nO parâmetro fgOrdenacao define em que ordem os artigos filtrados devem ser retornados. A ordenação padrão é por data de atualização, a qual deverá ser mantida como segunda forma de ordenação mesmo que outra seja selecionada. \n\n\"R\" ordena por data de atualização. \"V\" por número de visualizações. \"F\" por número de favoritações. \"C\" por número de compartilhamentos.",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -3851,7 +3851,7 @@
 								"$ref": "AAAAAAFpplH4TklSg2k="
 							},
 							"name": "obterArtigosAleatorios",
-							"documentation": "Deve retornar um vetor de artigos aleatórios.",
+							"documentation": "Deve retornar um vetor de inNumero artigos aleatórios.",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -3880,7 +3880,7 @@
 								"$ref": "AAAAAAFpplH4TklSg2k="
 							},
 							"name": "obterDetalhesArtigo",
-							"documentation": "A busca pode ocorrer por identificador ou por código único. Deve retornar todos os dados do artigo, inclusive o vetor de fotografias.",
+							"documentation": "Deve retornar todos os dados de um artigo, inclusive o vetor de fotografias. A busca pode ocorrer por identificador ou por código único.",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -3918,7 +3918,7 @@
 								"$ref": "AAAAAAFpplH4TklSg2k="
 							},
 							"name": "contatarDesigner",
-							"documentation": "Envia as informações para o designer e grava-as na tabela lgContatoDesigner.",
+							"documentation": "Envia as informações via e-mail para o designer e grava-as na tabela log_contatodesigners.",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -4010,7 +4010,7 @@
 								"$ref": "AAAAAAFpplH4TklSg2k="
 							},
 							"name": "proporCustomizacao",
-							"documentation": "Envia as informações para o designer e grava-as na tabela lgPropostaCustomizacao.",
+							"documentation": "Envia as informações via e-mail para o designer e grava-as na tabela log_customizacoes.",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -4093,7 +4093,7 @@
 								"$ref": "AAAAAAFpplH4TklSg2k="
 							},
 							"name": "registrarVisualizacao",
-							"documentation": "Registra visualização do artigo.",
+							"documentation": "Registra visualização do artigo, ou seja, incrementa o número de visualizações do artigo.",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -4113,6 +4113,7 @@
 								"$ref": "AAAAAAFpplH4TklSg2k="
 							},
 							"name": "registrarFavoritacao",
+							"documentation": "Registra favoritação do artigo, ou seja, incrementa o número de favoritações do artigo.",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -4132,6 +4133,7 @@
 								"$ref": "AAAAAAFpplH4TklSg2k="
 							},
 							"name": "registrarCompartilhamento",
+							"documentation": "Registra compartilhamento do artigo, ou seja, incrementa o número de compartilhamentos do artigo.",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -4220,7 +4222,7 @@
 								"$ref": "AAAAAAFpxIlrCVvnVqQ="
 							},
 							"name": "obterPagina",
-							"documentation": "Deve retornar os dados da página.",
+							"documentation": "Deve retornar os dados da página, buscada pela coluna identificador (textual).",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -4318,7 +4320,7 @@
 								"$ref": "AAAAAAFpxZcB2Utx7A4="
 							},
 							"name": "enviarContato",
-							"documentation": "Envia as informações para todos os administradores que têm o campo blRecebeContato marcado, e grava-as na tabela lgContato.",
+							"documentation": "Envia as informações para todos os administradores que têm o campo recebe_contato marcado, e grava-as na tabela log_contatodesigners.",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -4422,7 +4424,7 @@
 								"$ref": "AAAAAAFpyvp9qPEK0es="
 							},
 							"name": "obterDetalhesDesigner",
-							"documentation": "Deve retornar os dados do designer.",
+							"documentation": "Deve retornar todos os dados do designer.",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
