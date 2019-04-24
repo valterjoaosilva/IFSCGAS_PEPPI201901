@@ -1,26 +1,13 @@
-PPI2 Área Administrativa: Cadastro de fotografias de artigos baseado em AJAX (Vitor?)
-	- Listagem, Upload, Exclusão e Ordenação de fotografias de artigos.
-	- Botões cima/baixo na listagem das fotografias devem ser utilizados para alterar a ordem na qual as fotografias aparecem no website. Isso deve ser feito através do campo inOrdem da tabela.
-PPI2 Área Administrativa: Cadastro de fotografias de projetos baseado em AJAX (Isabela?)
-	- Listagem, Upload, Exclusão e Ordenação de fotografias de projetos.
-	- Botões cima/baixo na listagem das fotografias devem ser utilizados para alterar a ordem na qual as fotografias aparecem no website. Isso deve ser feito através do campo inOrdem da tabela.
-PPI2 Área Administrativa: Cadastro de fotografias de desfiles baseado em AJAX (Isabela?)
-	- Listagem, Upload, Exclusão e Ordenação de fotografias de projetos.
-	- Botões cima/baixo na listagem das fotografias devem ser utilizados para alterar a ordem na qual as fotografias aparecem no website. Isso deve ser feito através do campo inOrdem da tabela.
-PPI2 Área Administrativa: Edição de perfil do designer (?)
-	- Pode ser utilizada a ação "edit" do cadastro de designer, customizada para o perfil de designer
-	- Permitir alterar dados do designer, EXCETO seu e-mail.
-	- Atribuir sua data de atualização de cadastro.
-	- Troca de senha exige redigitação.
-	- Se nova senha não for informada, mantê-la inalterada.
-	
-	
 Tarefas posteriores:
+PPI1 Website - Suportar acesso a artigo por código
 PPI2 Área administrativa - Ajustes no cadastro de artigos
-	- O cadastro poderá ser acessado tanto por designers quanto por administradores, e deverá ser adaptado de forma dinâmica para cada perfil que acessa o sistema.
+	- O cadastro poderá ser acessado tanto por designers quanto por administradores, e deverá ser adaptado de forma dinâmica para cada um dos perfis.
 	- Administradores não poderão criar artigos (negar acesso à funcionalidade).
 	- Designers só poderão listar, criar, editar e excluir artigos de sua propriedade.
-PPI1 Website - Suportar acesso a artigo por código
+PPI2 Área administrativa - Exclusão de fotografias
+	- Quando excluir artigo, projeto ou desfile, excluir também as fotografias associadas.
+	- Solicitar dupla confirmação, destacando a exclusão das fotografias.
 
+Responsáveis:
 - Infraestrutura: Guilherme
 - Testes: Lucas e Mateus
